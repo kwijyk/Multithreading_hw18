@@ -29,6 +29,9 @@
                                 <state key="normal" title="Refresh">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="refrechAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARi-Yz-wrK"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rNo-B7-5RO">
                                 <rect key="frame" x="0.0" y="20" width="375" height="567"/>
@@ -107,6 +110,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ibStackView" destination="rNo-B7-5RO" id="gmb-Y3-dq9"/>
+                        <outletCollection property="ibImageCollections" destination="bXZ-Ff-HBc" collectionClass="NSMutableArray" id="vXm-Hx-jC2"/>
+                        <outletCollection property="ibImageCollections" destination="I4B-uy-4Ea" collectionClass="NSMutableArray" id="ty0-tJ-7T0"/>
+                        <outletCollection property="ibImageCollections" destination="bLy-ei-wkI" collectionClass="NSMutableArray" id="8S6-3h-sQV"/>
+                        <outletCollection property="ibActivityIndicatorCollections" destination="Wbd-Xz-uNk" collectionClass="NSMutableArray" id="Ro4-6a-neM"/>
+                        <outletCollection property="ibActivityIndicatorCollections" destination="7Ed-Qm-lZ8" collectionClass="NSMutableArray" id="xUO-IU-dki"/>
+                        <outletCollection property="ibActivityIndicatorCollections" destination="Azl-MW-3C7" collectionClass="NSMutableArray" id="rJA-Jw-AWs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
